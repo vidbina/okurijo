@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     liquid (2.5.1)
+    psych (2.0.0)
     rack (1.5.2)
     rack-protection (1.5.0)
       rack
@@ -17,5 +18,6 @@ PLATFORMS
 
 DEPENDENCIES
   liquid (~> 2.5.1)
+  psych (~> 2.0.0)
   sequel (~> 4.1.1)
   sinatra (~> 1.4.3)
