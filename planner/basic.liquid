@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- saved from url=(0021)http://suprnovae.com/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Budget</title>
+  <link href="/assets/print-66d4dc7995952144488052c813ce15e2.css" media="print" rel="stylesheet" type="text/css">
+  <link href="/assets/plan.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/assets/plan-print.css" media="print" rel="stylesheet" type="text/css" />
+  <!--[if IE]><link href="/assets/ie-289df6ad295f52c66fb842916a276d13.css" media="screen, projection" rel="stylesheet" type="text/css" /><![endif]-->
+	<script>
+		document.createElement("article");
+		document.createElement("section");
+		document.createElement("footer");
+		document.createElement("header");
+		document.createElement("hgroup");
+		document.createElement("nav");
+	</script>
+</head>
+<body>
+  <h1>Budget</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Expense</th>
+        <th>Cost</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <td>Total</td>
+        <td>{{expenses.total}}</td>
+      </tr>
+    </tfoot>
+  {% for expense in expenses %}
+    <tr>
+      <td>{{expense[0]}}</td>
+      <td>{{expense[1].cost}}</td>
+    </tr>
+  {% endfor %}
+  </table>
+</body></html>

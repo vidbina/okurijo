@@ -1,0 +1,18 @@
+expenses:
+  housing:    450
+  phone:       50
+  transportation:
+    metro:    100
+    train:    100
+  food:       200
+  clothing:   100
+  entertainment:
+    cinema:    26
+    netflix:    8
+  social:       0
+  health:
+    sportsclub: 20
+    insurance: 100
+  education:  145
+  bank:         0
+  savings:    200
