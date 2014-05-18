@@ -5,20 +5,24 @@ run ```./render --help``` to get a list of available options.
 If the previous command returns something sensible you may try building a 
 dummy invoice with some example data.
 
-```/render -t examples/template.liquid -c examples/client.yaml -w examples/work.yaml -m examples/me.yaml > invoice.md```
+```./render -t examples/template.liquid -c examples/client.yaml -w examples/work.yaml -m examples/me.yaml > invoice.md```
 
 The `examples/template.liquid` file is the liquid template to a markdown file.
 The output therefore is just another markdown file named `invoice.md` in this 
 case.
 
-We pass the information to the client, the work details and our own company's
-information.
+The following information is passed to the script in order to generate our
+invoice:
+
+  - information to the client (with the `-c` flag for _client_)
+  - the work details (with the `-w` flag for _work_)
+  - your company's information (with the `-m` flag for _me_)
 
 Upon errors the output file with remain empty.
 
 ## Company Details
-Add your company information in a _details.yaml_ file using the following
-structure.
+Add your company information in a _details.yaml_ or another file using the 
+following structure.
 ```yaml
 company:
   name: Acme Corp
@@ -74,6 +78,11 @@ work:
     time: 20u
     value: 1999.95
 ```
+
+The work entries have descriptions, times and values. For the `time` property 
+you are free to enter content like `12min`, `3hrs`, `9aeons`. The `time` 
+property simply has a representational value. The `value` property you must 
+enter a valid number because we will use this entry to determine the totals.
 
 # Grand Idea
 Simple tool to help me generate invoices from the CLI.
