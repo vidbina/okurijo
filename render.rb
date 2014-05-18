@@ -8,23 +8,15 @@ options = {}
 OptionParser.new do |opts|
   opts.banner = "Usage: #{CMD} [options]"
 
-  opts.on("-s", "--serial [SERIAL]", String, "Serialnumber") do |serial|
-    options[:serial] = serial
-  end
-
-  opts.on(:REQUIRED, "-c", "--client [FILENAME]", String, "Clientfile") do |client|
+  opts.on(:REQUIRED, "-c", "--client [FILENAME]", String, "Client file") do |client|
     options[:client] = client
   end
 
-  opts.on("-d", "--date [DATE]", String, "Invoice date") do |date|
-    options[:date] = date
-  end
-
-  opts.on("-m", "--company [FILENAME]", String, "Companyfile") do |company|
+  opts.on("-m", "--company [FILENAME]", String, "Company file") do |company|
     options[:company] = company
   end
 
-  opts.on(:REQUIRED, "-w", "--work [WORK]", String, "Workfile") do |work|
+  opts.on(:REQUIRED, "-w", "--work [FILENAME]", String, "Work file") do |work|
     options[:work] = work
   end
 
