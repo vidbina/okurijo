@@ -1,4 +1,20 @@
 # Getting Started
+Considering that all things are well with your system, you will just need to
+run ```./render --help``` to get a list of available options.
+
+If the previous command returns something sensible you may try building a 
+dummy invoice with some example data.
+
+```/render -t examples/template.liquid -c examples/client.yaml -w examples/work.yaml -m examples/me.yaml > invoice.md```
+
+The `examples/template.liquid` file is the liquid template to a markdown file.
+The output therefore is just another markdown file named `invoice.md` in this 
+case.
+
+We pass the information to the client, the work details and our own company's
+information.
+
+Upon errors the output file with remain empty.
 
 ## Company Details
 Add your company information in a _details.yaml_ file using the following
@@ -17,6 +33,10 @@ company:
   taxcode: TAX**
   iban: BANK**
 ```
+
+By default `details.yaml` in the current working directory is consulted for the
+company's information. If you want to specify the company file to use, 
+use the `-m PATH` option.
 
 ## Client Details
 In order to use client information in invoices you will be required to
