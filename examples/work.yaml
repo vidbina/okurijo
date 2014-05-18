@@ -1,0 +1,19 @@
+invoice:
+  serial: 201401
+  date: 12 januari 2014
+  expiration_date: 12 februari 2014
+  vat_rate: 21
+keywords:
+  - cayote 
+  - roadrunner
+  - exterminate
+work:
+  - description: Investigate booby trap malfunction
+    time: 2hrs
+    value:  100
+  - description: Perform repairs on 12 defective booby traps
+    time: 3 hrs
+    value: 150
+  - description: 1x booby trapper life insurance
+    time: N/A
+    value: 900000

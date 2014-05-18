@@ -1,0 +1,14 @@
+company:
+  name: Acme Corp
+  email: weapons@acme.corp
+  website: http://www.acme.corp
+  address: Danger Ln. 101 
+  postalcode: 98765 ZY 
+  city: Danger City
+  province: XX
+  country: Imaginationland
+  chamber_of_commerce_id: 987AZ123
+  taxcode: TAX123
+  bankaccount: BANK 12 34 56 78
+  iban: IL01BANK0012345678
+  bank: BANK

@@ -1,0 +1,39 @@
+# Factuur
+Incoice number: {{invoice.serial}}
+Date:{{invoice.date}}
+Expiration date: {{invoice.expiration_date}}
+
+## Company Details
+Tradename: {{company.name}}
+Email address: {{company.email}}
+Website: {{company.website}}
+Address: {{company.address}}
+  {{company.postalcode}}, {{company.city}}
+  {{company.province}} {{company.country}}
+Chamber of commerce id: {{company.chamberofcommerce}}
+VAT ID: {{company.taxcode}}
+IBAN: {{company.iban}}
+
+## Client
+Tradename: {{client.name}}
+Representative: {{client.representative}}
+Address: {{client.address}}
+  {{client.postalcode}}, {{client.city}}
+	
+-------------
+Subtotal: € {{invoice.subtotal}}
+VAT ({{invoice.vat_rate}} %): {{invoice.vat}}
+Total: € {{invoice.total}}
+
+## Activities
+{% for activity in work %}
+  - {{activity.time}} on {{activity.description}} amounting to € {{activity.value}}
+{% endfor %}
+
+## Note
+You are kindly requested to remit the beforementioned amount before 
+{{invoice.expiration_date}} to my account 
+<strong>IBAN: {{company.iban}}</strong> using words such as *{{invoice.serial}}*
+{% if keywords != empty %} and *{{keywords.first}}* or *{{keywords[1]}}*{% endif %}
+that would make it easier for me to link bankrecords to incoming payments. 
+Don't hesitate to consider me again for you next development mission.
