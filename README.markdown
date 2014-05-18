@@ -51,18 +51,19 @@ keywords:
   - TNT
 work:
   - description: Delivering some firepower to Cayote
-  - time: 20u
-  - value: 1999.95
+    time: 20u
+    value: 1999.95
 ```
 
 # Grand Idea
-Simply helps me build generate invoices.
+Simple tool to help me generate invoices from the CLI.
 
 # おくりじょう, okurijō (送り状)
 I don't know the first thing about the Japanese language, but like I do with my
 other projects I enter a few related keywords into
 [Google Translate](http://translate.google.com) and observe it's output in
-different translations until finding something that I dub exotic enough.
+different languages until finding something that I dub exotic and likeable 
+enough.
 
 If you google the phrase it will turn up as the Japanese word for the English
 _invoice_ and _bill_.
